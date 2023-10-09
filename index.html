@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>menu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul>
+    <li><a href="#" data-text="Driver"><img src="drv2.jpg" >Driver</a></li>
+    <li><a href="#" data-text="Starfield"><img src="field.jpeg" >Starfield</a></li>
+    <li><a href="#" data-text="Fight in TS"><img src="fights2.jpg" >Fight in TS</a></li>
+    <li><a href="#" data-text="Forza"><img src="forza.jpeg" >Forza</a></li>
+    <li><a href="#" data-text="GTA VI"><img src="gta.jpeg" >GTA VI</a></li>
+    <li><a href="#" data-text="Black Messa"><img src="half.jpeg" >Black Messa</a></li>
+    <div class="cursor"></div>
+  </ul>
+  <script>
+    let pos = documentElement;
+    pos.addEventListener("mousemove", e => {
+      pos.style.setProperty('--x', e.clientX + "px");
+      pos.style.setProperty('--y', e.clientY + "px");
+    })
+  </script>
+</body>
+</html>
